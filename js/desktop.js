@@ -333,6 +333,14 @@ function menu(){
         const p07_tab1 = document.createElement('p');
         p07_tab1.innerHTML = 'Paint'
 
+        const todosApps = document.createElement('div');
+        todosApps.className = 'todos'
+        const vertodos = document.createElement('p');
+        vertodos.innerHTML = 'Todos os Programas'
+        const triangulo = document.createElement('div');
+        triangulo.className = 'triangulo'
+
+
 
 
         const tabela2 = document.createElement('div');
@@ -386,12 +394,32 @@ function menu(){
         const p06_tab2 = document.createElement('p');
         p06_tab2.innerHTML = 'Redes'
 
+        const lastDiv = document.createElement('div');
+        lastDiv.className = 'last'
+        const logout = document.createElement('img');
+        logout.src = 'src/logout.jpg'
+        logout.width = 24; logout.height = 24;
+        const dolog = document.createElement('p');
+        dolog.innerHTML = 'Fazer logoff'
+        const logoff = document.createElement('img');
+        logoff.src = 'src/off.png'
+        logoff.width = 24; logoff.height = 24;
+        const doloff = document.createElement('p');
+        doloff.innerHTML = 'Desligar o computador'
+
+
         div.appendChild(barra)
         barra.appendChild(perfil)
         barra.appendChild(p)
         div.appendChild(corpo)
         corpo.appendChild(tabela1)
         corpo.appendChild(tabela2)
+        div.appendChild(lastDiv)
+
+        lastDiv.appendChild(logout)
+        lastDiv.appendChild(dolog)
+        lastDiv.appendChild(logoff)
+        lastDiv.appendChild(doloff)
 
         tabela1.appendChild(app1tab1)
         tabela1.appendChild(app2tab1)
@@ -400,6 +428,7 @@ function menu(){
         tabela1.appendChild(app5tab1)
         tabela1.appendChild(app6tab1)
         tabela1.appendChild(app7tab1)
+        tabela1.appendChild(todosApps)
 
 
         app1tab1.appendChild(img01_tab1)
@@ -423,6 +452,8 @@ function menu(){
         app7tab1.appendChild(img07_tab1)
         app7tab1.appendChild(p07_tab1)
 
+        todosApps.appendChild(vertodos)
+        todosApps.appendChild(triangulo)
 
         tabela2.appendChild(app1tab2)
         tabela2.appendChild(app2tab2)
