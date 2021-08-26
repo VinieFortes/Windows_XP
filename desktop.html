@@ -8,7 +8,7 @@
 <body >
     <div class="desktop">
         <div class="Apps">
-            <div class="icones">
+            <div onclick="lixeira()" class="icones">
                 <img src="src/lixeira.png" width="42" alt="Lixeira">
                 <p>Lixeira</p>
             </div>
@@ -16,11 +16,11 @@
                 <img src="src/computer.png" width="42" alt="Meu computador">
                 <p>Meu Computador</p>
             </div>
-            <div class="icones">
+            <div onclick="arquivos()" class="icones">
                 <img src="src/documentos.png" width="42" alt="Meus documentos">
                 <p>Meus Documentos</p>
             </div>
-            <div class="icones">
+            <div onclick="telaAzul()" class="icones">
                 <img src="src/explorer.png" width="42" alt="Internet Explorer">
                 <p>Internet Explorer</p>
             </div>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="dock">
-        <div class="windows_logo">
+        <div value="0" id="menu" onclick="menu()" class="windows_logo">
             <img id="logo" src="src/windows.png" width="24" height="24" alt="windows">
             <p id="iniciar">Iniciar</p>
         </div>
