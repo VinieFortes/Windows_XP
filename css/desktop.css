@@ -89,3 +89,36 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+.meuPC{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: #005cfa;
+    position: absolute;
+}
+.barra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.barra p{
+    color: white;
+    line-height: 0.1;
+}
+.barra img{
+    margin-left: auto;
+}
+.corpo{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    color: black;
+}
+.corpo p{
+    margin-left: 50px;
+    font-weight: bolder;
+}
