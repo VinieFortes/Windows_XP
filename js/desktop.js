@@ -254,7 +254,7 @@ function arquivos(){
 }
 
 function telaAzul(){
-
+    window.location.href = 'telaAzul.html';
 }
 
 let count;
