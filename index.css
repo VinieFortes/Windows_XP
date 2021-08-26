@@ -1,91 +1,76 @@
-.desktop{
+body{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    background-color: #00309c;
+}
+.login{
+    box-shadow:  0 0 4px 4px #DBA632;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background-color: #5a7edc;
+    color: white;
     left: 0;
-    top: 0;
-    height: 100%;
+    right: 0;
+    top: 100px;
+    bottom: 150px;
     position: absolute;
-    background-image: url("/src/wallpaper.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-.Apps{
+.win{
     display: flex;
     flex-direction: column;
-    margin-right: auto;
+    justify-content: center;
+    align-items: flex-end;
 }
-.icones{
+.win p{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.vl {
+    border-left: 2px solid white;
+    height: auto;
+    margin-left: 20px;
+    opacity: 45%;
+}
+.users{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+.user{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin: 10px;
-    font-family: monospace;
+    margin-bottom: 20px;
+}
+.user img{
+    border: yellow 4px solid;
+    border-radius: 8px;
+}
+.user p{
+    margin-left: 12px;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.off{
+    position: absolute;
+    top: 83%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.off p{
+    margin-left: 5px;
     color: white;
     font-weight: bolder;
-    font-size: 13px;
-    line-height: 0.1px;
-    text-shadow: -0.4px -0.4px 0 #000, 0.4px -0.4px 0 #000, -0.4px 0.4px 0 #000, 0.4px 0.4px 0 #000;
-}
-
-
-
-.dock{
-    display: flex;
-    flex-direction: row;
-    background-color: #3B77BC;
-    height: 45px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-}
-.windows_logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: fit-content;
-    height: 45px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-bottom-right-radius: 16px;
-    border-top-right-radius: 16px;
-    background-color: #008000;
-    filter: grayscale(0.20);
-}
-#iniciar{
-    color: white;
-    margin-left: 5px;
     font-size: 20px;
-    font-weight: bolder;
 }
-.idioma{
+.msg{
+    color: white;
+    top: 83%;
+    right: 0;
     margin-right: 10px;
-}
-.idioma p{
-    color: white;
-}
-.status{
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-}
-.status_bar{
-    padding-right: 3px;
-    padding-left: 5px;
-    align-items: center;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    background-color: #008080;
-    border-left: black 1px solid;
-}
-.status_bar img{
-    margin-right: 3px;
-    margin-left: 2px;
-}
-.status_bar p{
-    margin-left: 5px;
-    margin-right: 5px;
+    position: absolute;
 }
