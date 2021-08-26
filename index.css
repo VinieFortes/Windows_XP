@@ -1,0 +1,91 @@
+.desktop{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    background-image: url("/src/wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Apps{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+.icones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    font-family: monospace;
+    color: white;
+    font-weight: bolder;
+    font-size: 13px;
+    line-height: 0.1px;
+    text-shadow: -0.4px -0.4px 0 #000, 0.4px -0.4px 0 #000, -0.4px 0.4px 0 #000, 0.4px 0.4px 0 #000;
+}
+
+
+
+.dock{
+    display: flex;
+    flex-direction: row;
+    background-color: #3B77BC;
+    height: 45px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+.windows_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #008000;
+    filter: grayscale(0.20);
+}
+#iniciar{
+    color: white;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.idioma{
+    margin-right: 10px;
+}
+.idioma p{
+    color: white;
+}
+.status{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+.status_bar{
+    padding-right: 3px;
+    padding-left: 5px;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: #008080;
+    border-left: black 1px solid;
+}
+.status_bar img{
+    margin-right: 3px;
+    margin-left: 2px;
+}
+.status_bar p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
