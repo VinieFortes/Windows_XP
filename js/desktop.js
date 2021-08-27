@@ -21,7 +21,7 @@ function setTime(){
     const hora = document.getElementById("hora");
     hora.innerHTML = time;
 
-    setTimeout(setTime, 30000);
+    setTimeout(setTime, 10000);
 }
 
 //Função responsavel em reproduzir som de Boas-vindas do XP
