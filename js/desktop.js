@@ -1,6 +1,7 @@
 setTime()
 winSoundWelcome()
 
+// Função responsavel por getTime da maquina e mostrar no elemento
 function setTime(){
     const currentdate = new Date();
     let time;
@@ -22,11 +23,14 @@ function setTime(){
 
     setTimeout(setTime, 30000);
 }
+
+//Função responsavel em reproduzir som de Boas-vindas do XP
 function winSoundWelcome() {
     const audio = new Audio('src/welcome.mp3');
     audio.play().then();
 }
 
+//Função responsavel em criar a DIV com diversos elementos que representa a janela do Windows
 function meuPC(){
     const div = document.createElement('div');
     div.className = 'meuPC'
@@ -87,6 +91,7 @@ function meuPC(){
     document.getElementsByTagName('body')[0].appendChild(div);
 }
 
+//Função responsavel em criar a DIV com diversos elementos que representa a janela do Windows
 function lixeira(){
     const div = document.createElement('div');
     div.className = 'meuPC'
@@ -143,6 +148,7 @@ function lixeira(){
     document.getElementsByTagName('body')[0].appendChild(div);
 }
 
+//Função responsavel em criar a DIV com diversos elementos que representa a janela do Windows
 function arquivos(){
     const div = document.createElement('div');
     div.className = 'meuPC'
@@ -253,12 +259,14 @@ function arquivos(){
     document.getElementsByTagName('body')[0].appendChild(div);
 }
 
+//Função responsavel em chamar o .html da TelaAzul
 function telaAzul(){
     window.location.href = 'telaAzul.html';
 }
 
 let count;
 
+//Função responsavel para criar o menu Inciar
 function menu(){
     if(count === 0 || count === undefined){
         const div = document.createElement('div');
@@ -274,9 +282,11 @@ function menu(){
         const corpo = document.createElement('div');
         corpo.className = 'corpo_menu'
 
+        //Tabela 1 representa os Apps que estão a Esquerda
         const tabela1 = document.createElement('div');
         tabela1.className = 'tabela01'
 
+        //Todos App 'X' tab1 representa uma div com img e p de cada App da tabela 1
         const app1tab1 = document.createElement('div');
         app1tab1.className = 'apptab1'
         const img01_tab1 = document.createElement('img');
@@ -333,6 +343,7 @@ function menu(){
         const p07_tab1 = document.createElement('p');
         p07_tab1.innerHTML = 'Paint'
 
+        //Responsavel em criar uma div com p e outra div que é triangulo verde
         const todosApps = document.createElement('div');
         todosApps.className = 'todos'
         const vertodos = document.createElement('p');
@@ -342,10 +353,11 @@ function menu(){
 
 
 
-
+        //Tabela 02 representa os Apps da Direita
         const tabela2 = document.createElement('div');
         tabela2.className = 'tabela02'
 
+        //Todos App 'X' tab2 representa uma div com img e p de cada App da tabela 2
         const app1tab2 = document.createElement('div');
         app1tab2.className = 'apptab1'
         const img01_tab2 = document.createElement('img');
@@ -407,7 +419,7 @@ function menu(){
         const doloff = document.createElement('p');
         doloff.innerHTML = 'Desligar o computador'
 
-
+        //Responsavel por organizaçar de forma hierarquia os elementos no HTML
         div.appendChild(barra)
         barra.appendChild(perfil)
         barra.appendChild(p)
@@ -487,6 +499,7 @@ function menu(){
         count = 0;
         remove()
     }
+    //Função que remove div, usada apaenas para o menu Inciar
     function remove() {
         const elem = document.getElementById('teste');
         elem.remove()
